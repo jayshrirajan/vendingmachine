@@ -1,6 +1,6 @@
 package com.example.vmApp.model;
 
-public class vendItemRequest {
+public class VendItemRequest {
     private int itemId;
     private double amount;
 

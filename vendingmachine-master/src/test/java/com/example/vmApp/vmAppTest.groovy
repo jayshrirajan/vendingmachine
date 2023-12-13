@@ -1,9 +1,9 @@
 package com.example.vmApp
 
 
-import com.example.vmApp.model.item
+import com.example.vmApp.model.Item
 import com.example.vmApp.repository.ItemRepository
-import com.example.vmApp.service.vendingMachineService
+import com.example.vmApp.service.VendingMachineService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import spock.lang.Specification
@@ -17,7 +17,7 @@ class vmAppTest extends Specification {
     def itemRepository = Mock(ItemRepository)
 
     @Subject
-    vendingMachineService vendingMachineService = new vendingMachineService(itemRepository)
+    VendingMachineService vendingMachineService = new VendingMachineService(itemRepository)
 
 
 //    def "addChange"() {
@@ -48,7 +48,7 @@ class vmAppTest extends Specification {
     @Unroll
     def "addChange method with denominations"() {
         when:
-        def result = new vendingMachineService().addChange(denominations)
+        def result = new VendingMachineService().addChange(denominations)
 
         then:
         result == expectedTotal
@@ -63,7 +63,7 @@ class vmAppTest extends Specification {
 
     def "getTotalItems"() {
         given:
-        def VendingMachineService = new vendingMachineService()
+        def VendingMachineService = new VendingMachineService()
 
         when:
         int totalItems = VendingMachineService.getTotalItems()
@@ -84,7 +84,7 @@ class vmAppTest extends Specification {
 
 
         when:
-        def item = new item(itemCode: "A", itemName: "Soda", itemCost: 2.0, idItem: 1, quantity: 5)
+        def item = new Item(itemCode: "A", itemName: "Soda", itemCost: 2.0, idItem: 1, quantity: 5)
 
         then:
         item.idItem == idItem
@@ -97,8 +97,8 @@ class vmAppTest extends Specification {
     def "should throw ItemOutOfStockException when item is out of stock"() {
         given:
         def itemRepository = Mock(ItemRepository)
-        itemRepository.findById(1) >> Optional.of(new item(idItem: 1, quantity: 0, itemCost: 2.0))
-        def vendingMachineService = new vendingMachineService(itemRepository)
+        itemRepository.findById(1) >> Optional.of(new Item(idItem: 1, quantity: 0, itemCost: 2.0))
+        def vendingMachineService = new VendingMachineService(itemRepository)
 
         when:
         def result = vendingMachineService.vendItem(1, 10.0, 1)
@@ -109,7 +109,7 @@ class vmAppTest extends Specification {
 
     def "vendItem should handle ItemNotFoundException"() {
         given:
-        vendingMachineService vendingMachine = new vendingMachineService(itemRepository)
+        VendingMachineService vendingMachine = new VendingMachineService(itemRepository)
         int itemId = 12
         double amount = 3.0
         int quantity = 1
@@ -124,8 +124,8 @@ class vmAppTest extends Specification {
     def "should throw Insufficient Balance exception when amount is less than required for #quantity item(s)"() {
         given:
         def itemRepository = Mock(ItemRepository)
-        itemRepository.findById(1) >> Optional.of(new item(idItem: 1, quantity: 5, itemCost: 2.0))
-        def vendingMachineService = new vendingMachineService(itemRepository)
+        itemRepository.findById(1) >> Optional.of(new Item(idItem: 1, quantity: 5, itemCost: 2.0))
+        def vendingMachineService = new VendingMachineService(itemRepository)
 
         when:
         def result = vendingMachineService.vendItem(1, amount, quantity)
@@ -143,8 +143,8 @@ class vmAppTest extends Specification {
     def "Item Vended Successfully"() {
         given:
         def itemRepository = Mock(ItemRepository)
-        itemRepository.findById(1) >> Optional.of(new item(idItem: 1, quantity: 1, itemCost: 2.0, itemName: "Soda"))
-        def vendingMachineService = new vendingMachineService(itemRepository)
+        itemRepository.findById(1) >> Optional.of(new Item(idItem: 1, quantity: 1, itemCost: 2.0, itemName: "Soda"))
+        def vendingMachineService = new VendingMachineService(itemRepository)
 
         when:
         def result = vendingMachineService.vendItem(1, amount, quantity)

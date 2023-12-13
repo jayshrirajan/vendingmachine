@@ -5,7 +5,7 @@ package com.example.vmApp.model;
 import javax.persistence.*;
 @Entity
 @Table(name="Item")
-public class item {
+public class Item {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -38,7 +38,7 @@ public class item {
         this.idItem = idItem;
     }
 
-    public item(String itemCode, String itemName, double itemCost, int idItem, int quantity) {
+    public Item(String itemCode, String itemName, double itemCost, int idItem, int quantity) {
         this.itemCode = itemCode;
         this.itemName = itemName;
         this.itemCost = itemCost;
@@ -87,7 +87,7 @@ public class item {
                 '}';
     }
 
-    public item() {
+    public Item() {
 
     }
 

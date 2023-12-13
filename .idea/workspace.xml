@@ -5,7 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e7dc17c-3803-4234-bebe-7c8bc49e3b06" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/vendingmachine-master/src/main/java/com/example/vmApp/exception/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendingmachine-master/src/main/java/com/example/vmApp/exception/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine-master/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/src/main/java/com/example/vmApp/controller/vendingMachineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine-master/src/main/java/com/example/vmApp/controller/VendingMachineController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/src/main/java/com/example/vmApp/exception/globalException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/src/main/java/com/example/vmApp/exception/globalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/src/main/java/com/example/vmApp/exception/insufficientBalanceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine-master/src/main/java/com/example/vmApp/exception/InsufficientBalanceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/src/main/java/com/example/vmApp/exception/itemNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine-master/src/main/java/com/example/vmApp/exception/ItemNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/src/main/java/com/example/vmApp/exception/itemOutOfStockException.java" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine-master/src/main/java/com/example/vmApp/exception/ItemOutOfStockException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/src/main/java/com/example/vmApp/exception/unableToReturnBalanceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine-master/src/main/java/com/example/vmApp/exception/UnableToReturnBalanceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/src/main/java/com/example/vmApp/model/errorResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/src/main/java/com/example/vmApp/model/item.java" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine-master/src/main/java/com/example/vmApp/model/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/src/main/java/com/example/vmApp/model/vendItemRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine-master/src/main/java/com/example/vmApp/model/VendItemRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/src/main/java/com/example/vmApp/repository/ItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine-master/src/main/java/com/example/vmApp/repository/ItemRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/src/main/java/com/example/vmApp/service/vendingMachineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine-master/src/main/java/com/example/vmApp/service/VendingMachineService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/src/main/java/com/example/vmApp/swagger/swaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine-master/src/main/java/com/example/vmApp/swagger/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/src/main/java/com/example/vmApp/vmAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine-master/src/main/java/com/example/vmApp/VmAppApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine-master/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/src/test/java/com/example/vmApp/vmAppTest.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine-master/src/test/java/com/example/vmApp/vmAppTest.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine-master/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/target/classes/com/example/vmApp/controller/vendingMachineController.class" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine-master/target/classes/com/example/vmApp/controller/vendingMachineController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/target/classes/com/example/vmApp/exception/globalException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/target/classes/com/example/vmApp/exception/globalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine-master/target/classes/com/example/vmApp/exception/globalExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/target/classes/com/example/vmApp/exception/insufficientBalanceException.class" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine-master/target/classes/com/example/vmApp/exception/insufficientBalanceException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/target/classes/com/example/vmApp/exception/itemNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine-master/target/classes/com/example/vmApp/exception/itemNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/target/classes/com/example/vmApp/exception/itemOutOfStockException.class" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine-master/target/classes/com/example/vmApp/exception/itemOutOfStockException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/target/classes/com/example/vmApp/exception/unableToReturnBalanceException.class" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine-master/target/classes/com/example/vmApp/exception/unableToReturnBalanceException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/target/classes/com/example/vmApp/model/item.class" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine-master/target/classes/com/example/vmApp/model/item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/target/classes/com/example/vmApp/model/vendItemRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine-master/target/classes/com/example/vmApp/model/vendItemRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/target/classes/com/example/vmApp/repository/ItemRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine-master/target/classes/com/example/vmApp/repository/ItemRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/target/classes/com/example/vmApp/service/vendingMachineService.class" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine-master/target/classes/com/example/vmApp/service/vendingMachineService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/target/classes/com/example/vmApp/swagger/swaggerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine-master/target/classes/com/example/vmApp/swagger/swaggerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendingmachine-master/target/classes/com/example/vmApp/vmAppApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/vendingmachine-master/target/classes/com/example/vmApp/vmAppApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +68,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/jayasri.rajan/Downloads/vendingmachine-master (1)",
+    "last_opened_file_path": "C:/Users/jayasri.rajan/Downloads/RestTemplate",
     "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.vmApp.example" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="vmAppApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.vmApp.vmAppApplication" />
+    <configuration name="VmAppApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.vmApp.VmAppApplication" />
       <module name="vmApp" />
       <extension name="coverage">
         <pattern>
@@ -55,7 +93,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.vmAppApplication" />
+        <item itemvalue="Application.VmAppApplication" />
       </list>
     </recent_temporary>
   </component>
